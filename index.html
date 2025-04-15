@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livsmedelsdata - Enkel</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Matplaneraren</h1>
+
+    <div class="layout-container">
+      <div class="livsmedel-section">
+        <h2>Livsmedel</h2>
+        <div id="loading">Hämtar data...</div>
+
+        <table id="foodTable" style="display: none">
+          <thead>
+            <tr>
+              <th>Välj</th>
+              <th>Nummer</th>
+              <th>Livsmedelsnamn</th>
+            </tr>
+          </thead>
+          <tbody id="foodData">
+            <!-- Data kommer att infogas här -->
+          </tbody>
+        </table>
+
+        <div class="pagination" id="pagination">
+          <!-- Sidnumreringsknappar kommer att infogas här -->
+        </div>
+      </div>
+
+      <div class="naringsvarde-section">
+        <h2>Näringsvärden</h2>
+        <div id="nutritionSection">
+          <!-- Näringsvärden kommer att visas här -->
+        </div>
+      </div>
+    </div>
+
+    <div class="total-naringsvarde" id="totalNutrition">
+      <!-- Totala näringsvärden kommer att visas här -->
+    </div>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>

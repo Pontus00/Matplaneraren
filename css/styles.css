@@ -1,0 +1,150 @@
+/* Styling för kroppen */
+body {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #34495e;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Styling för tabellen */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Se till att livsmedel-tabellen inte expanderar när många näringsvärden läggs till */
+#foodTable {
+  max-height: 400px; /* Sätt en fast höjd */
+  overflow-y: auto; /* Aktivera vertikal rullning för överflöd */
+}
+
+/* Valfritt: Lägg till en kant eller bakgrund för att skilja det rullbara området */
+#foodTable {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Styling för knappar */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.btn-show-nutrition {
+  background-color: #007bff;
+  color: white;
+  margin: 10px 0;
+}
+
+/* Layout för livsmedel och näringsvärde */
+.layout-container {
+  display: flex;
+  align-items: flex-start; /* Justera objekt längst upp */
+  gap: 20px;
+}
+
+/* Se till att livsmedel-sektionen har en konsekvent storlek och höjd */
+.livsmedel-section {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: auto; /* Tillåt dynamisk höjd */
+  overflow-y: visible; /* Inaktivera rullning */
+  width: 100%; /* Se till att den täcker hela bredden */
+}
+
+/* Styling för näringsvärde-sektionen */
+.naringsvarde-section {
+  flex: 2;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Tillåt rullning för näringsvärde */
+}
+
+/* Styling för objektsektioner */
+.item-section {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.item-section h3 {
+  color: #2c3e50;
+}
+
+.slider-container {
+  margin: 10px 0;
+}
+
+.slider {
+  width: 100%;
+}
+
+/* Total näringsvärde-styling */
+.total-naringsvarde {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #eaf2f8;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
