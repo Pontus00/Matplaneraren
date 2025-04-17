@@ -55,10 +55,10 @@ tr:hover {
 /* Se till att livsmedel-tabellen inte expanderar när många näringsvärden läggs till */
 #foodTable {
   max-height: 400px; /* Sätt en fast höjd */
-  overflow-y: auto; /* Aktivera vertikal rullning för överflöd */
+  overflow-y: auto; /* Aktivera vertikal scrolling för överflöd */
 }
 
-/* Valfritt: Lägg till en kant eller bakgrund för att skilja det rullbara området */
+/* Valfritt: Lägg till en kant eller bakgrund för att skilja det scrollbara området */
 #foodTable {
   border: 1px solid #ccc;
   background-color: #f9f9f9;
@@ -101,7 +101,7 @@ button:hover {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   height: auto; /* Tillåt dynamisk höjd */
-  overflow-y: visible; /* Inaktivera rullning */
+  overflow-y: visible; /* Inaktivera scrollning */
   width: 100%; /* Se till att den täcker hela bredden */
 }
 
